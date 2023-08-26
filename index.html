@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">  
+    <script src="https://kit.fontawesome.com/d63140c660.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-------------------Header------------------->
+    <div class="header" id="header">
+        <div class="container">
+            <nav>
+                <p class=" logo"><span>D</span>ENISH.</p>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li class="dropdown">
+                        <button class="nav-dropdown"><a href="#projects">Projects</a></button>
+                        <ul class="dropdown-content">
+                            <li><a href="#programming-section">Programming</a></li>
+                            <li><a href="#drawing-section">Drawing</a></li>
+                            <li><a href="#graphic-design-section">Graphic Design</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Computer Science Student At <br><span>Princeton University</span></p>
+                <h1>Hi, I'm <span>Denish</span> Patel <br>from New Jersey</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------About Me------------------->
+    <div class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <a href="images/Denish.png" class="lightbox-link">
+                        <img src="images/Denish.png">
+                    </a>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>
+                        Hey there! I'm nestled within the lively world of Princeton, finding my rhythm between computer science and the artistry of graphic design. 
+                        It's not just about the code or the canvas for me—it's the thrill of discovery, the joy of creating something new, and the conversations sparked by a fresh idea. 
+                        I’m constantly inspired by the vibrant fusion of tech and design, always chasing that perfect blend. 
+                        But beyond the screens and sketches, I’m also on a journey to understand the deeper impact of what we create in the tech world. 
+                        As you get to know me, you'll see someone who's not just passionate about innovation, but also deeply invested in the stories and people behind it. 
+                        Let’s embark on this exciting adventure together!
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">STEM Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <div class="skills-row">
+                                <li class="skills-col-1"><span>Programming</span>
+                                    <ul>
+                                        <li>Java</li>
+                                        <li>Python</li>
+                                        <li>HTML (Hypertext Markup Language)</li>
+                                        <li>CSS (Cascading Style Sheet)</li>
+                                        <li>SQL (Structured Query Language)</li>
+                                        <li>JavaScript</li>
+                                    </ul>
+                                </li>
+                                <li class="skills-col-2"><span>Graphic Design</span>
+                                    <ul>
+                                        <li>Adobe Photoshop</li>
+                                        <li>Adobe Illustrator</li>
+                                        <li>Adobe InDesign</li>
+                                        <li>Procreate</li>
+                                        <li>Canva</li>
+                                    </ul>
+                                </li>
+                            </div>
+                        </ul>
+                        <i class="fa-brands fa-java"></i>
+                        <i class="fa-brands fa-python"></i>
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <i class="fa-brands fa-square-js"></i>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>May 2023 - August 2023</span><br>Explore Emerging Computing in Science and Engineering</li>
+                            <li><span>Februrary 2023 - May 2023</span><br>AI Alignment</li>
+                            <li><span>September 2022 - Present</span><br>Scholar Institue Fellows Program (SIFP)</li>
+                            <li><span>September 2019 - June 2022</span><br>Computer Club <em>(President)</em></li>
+                            <li><span>September 2019 - June 2022</span><br>Math Club <em>(President)</em></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>September 2022 - May 2026</span><br>Princeton University</li>
+                            <li><span>September 2018 - June 2022</span><br>North Bergen High School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------Projects------------------->
+    <div id="projects">
+        <div class="container">
+            <h1 class="subtitle">Projects</h1>
+            <h2 class="subsubtitle" id="programming-section">Programming</h2>
+                <div class="project-list">
+                    <div class="project">
+                        <img src="images/TouringNewYork.png">
+                        <div class="layer">
+                            <h3>Touring New York</h3>
+                            <p>Guides tourist with offline access to the New York City's seating locations.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3>Online Shopping App</h3>
+                            <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="project hidden-project">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="project hidden-project">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3>Online Shopping App</h3>
+                            <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a id="programming-more" class="more-button button" onclick="toggleProjects('programming-more')">See More</a>
+                <a id="programming-less" class="less-button button" onclick="toggleProjects('programming-less')">See Less</a>
+            
+            <h2 class="subsubsection" id="drawing-section">Drawing</h2>
+                <div class="drawing-list">
+                    <div class="drawing">
+                        <a href="drawings/NASA.JPG" class="lightbox-link">
+                            <img src="drawings/NASA.JPG">
+                        </a>
+                    </div>
+                    <div class="drawing">
+                        <a href="drawings/ReflectionMicrone.jpg" class="lightbox-link">
+                            <img src="drawings/ReflectionMicrone.jpg">
+                        </a>
+                    </div>
+                    <div class="drawing">
+                        <a href="drawings/stilllife1.JPG" class="lightbox-link">
+                            <img src="drawings/stilllife1.JPG">
+                        </a>
+                    </div>
+                    <div class="drawing hidden-drawing">
+                        <a href="drawings/BeautyOfNature.jpg" class="lightbox-link">
+                            <img src="drawings/BeautyOfNature.jpg">
+                        </a>
+                    </div>
+                    <div class="drawing hidden-drawing">
+                        <a href="drawings/SoftPastel.jpg" class="lightbox-link">
+                            <img src="drawings/SoftPastel.jpg">
+                        </a>
+                    </div>
+                    <div class="drawing hidden-drawing">
+                        <a href="drawings/VirtualLearning.jpg" class="lightbox-link">
+                            <img src="drawings/VirtualLearning.jpg">
+                        </a>    
+                    </div>
+                    <div class="drawing hidden-drawing">
+                        <a href="drawings/sketch.JPG" class="lightbox-link">
+                            <img src="drawings/sketch.JPG">
+                        </a>
+                    </div>
+                    <div class="drawing hidden-drawing">
+                        <a href="drawings/stilllife2.JPG" class="lightbox-link">
+                            <img src="drawings/stilllife2.jpg">
+                        </a>
+                    </div>
+                </div>
+                <a id="drawing-more" class="more-button button" onclick="toggleProjects('drawing-more')">See More</a>
+                <a id="drawing-less" class="less-button button" onclick="toggleProjects('drawing-less')">See Less</a>
+            
+            <h2 class="subsubsection" id="graphic-design-section">Graphic Design</h2>
+                <div class="design-list">
+                    <div class="design">
+                        <a href="drawings/NASA.JPG" class="lightbox-link">
+                            <img src="drawings/NASA.JPG">
+                        </a>
+                    </div>
+                    <div class="design">
+                        <a href="drawings/ReflectionMicrone.jpg" class="lightbox-link">
+                            <img src="drawings/ReflectionMicrone.jpg">
+                        </a>
+                    </div>
+                    <div class="design">
+                        <a href="drawings/stilllife1.JPG" class="lightbox-link">
+                            <img src="drawings/stilllife1.JPG">
+                        </a>
+                    </div>
+                    <div class="design hidden-design">
+                        <a href="drawings/sketch.JPG" class="lightbox-link">
+                            <img src="drawings/sketch.JPG">
+                        </a>
+                    </div>
+                </div>
+                <a id="design-more" class="more-button button" onclick="toggleProjects('design-more')">See More</a>
+                <a id="design-less" class="less-button button" onclick="toggleProjects('design-less')">See Less</a>
+        </div>
+    </div>
+    <!-------------------Contact------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p class="contact-info"><a class="email" href="mailto:dp9798@princeton.edu"><i class="fa-solid fa-paper-plane"></i> dp9798@princeton.edu</a></p>
+                    <p class="contact-info"><a class="phone" href="tel:+1929371-9720"><i class="fa-solid fa-phone"></i> +1 (929) 371-9720</a></p>
+                    <div class="social-icons contact-info">
+                        <a href="https://www.linkedin.com/in/denish-patel-6ab074240"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Denish2003"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://instagram.com/denishpatel_13?utm_source=qr&igshid=MzNINGNkZWQ4Mg%3D%3D"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="Resume.pdf" class="button button2" open>Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="Submit" class="button button2">Submit</button>
+                    </form>
+                    <span id="confirmation"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Denish Patel.</p>
+        </div>
+    </div>
+    <!-------------------JavaScript------------------->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        function toggleProjects(action) {
+            let hiddenProjects = document.querySelectorAll('.hidden-project');
+            let hiddenDrawings = document.querySelectorAll('.hidden-drawing');
+            let hiddenDesigns = document.querySelectorAll('.hidden-design');
+
+            if (action === 'programming-more') {
+                hiddenProjects.forEach(project => {
+                    project.style.display = 'block';
+                });
+                document.getElementById('programming-more').style.display = 'none';
+                document.getElementById('programming-less').style.display = 'block';
+            } else if (action === 'programming-less') {
+                hiddenProjects.forEach(project => {
+                    project.style.display = 'none';
+                });
+                document.getElementById('programming-more').style.display = 'block';
+                document.getElementById('programming-less').style.display = 'none';
+            } else if (action === 'drawing-more') {
+                hiddenDrawings.forEach(drawing => {
+                    drawing.style.display = 'block';
+                });
+                document.getElementById('drawing-more').style.display = 'none';
+                document.getElementById('drawing-less').style.display = 'block';
+            } else if (action === 'drawing-less') {
+                hiddenDrawings.forEach(drawing => {
+                    drawing.style.display = 'none';
+                });
+                document.getElementById('drawing-more').style.display = 'block';
+                document.getElementById('drawing-less').style.display = 'none';
+            } else if (action === 'design-more') {
+                hiddenDesigns.forEach(design => {
+                    design.style.display = 'block';
+                });
+                document.getElementById('design-more').style.display = 'none';
+                document.getElementById('design-less').style.display = 'block';
+            } else if (action === 'design-less') {
+                hiddenDesigns.forEach(design => {
+                    design.style.display = 'none';
+                });
+                document.getElementById('design-more').style.display = 'block';
+                document.getElementById('design-less').style.display = 'none';
+            }
+        }
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let links = document.querySelectorAll('.lightbox-link');
+
+            links.forEach(function(link) {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+
+                    let imgSrc = this.querySelector('img').getAttribute('src');
+                    openLightbox(imgSrc);
+                });
+            });
+        });
+
+        function openLightbox(imgSrc) {
+            let lightbox = document.createElement('div');
+            lightbox.className = 'lightbox';
+            lightbox.innerHTML = `
+                <img src="${imgSrc}" alt="Zoomed Image">
+                <span class="close" onclick="closeLightbox()">&times;</span>
+            `;
+
+            document.body.appendChild(lightbox);
+            lightbox.style.display = 'flex';
+
+            lightbox.addEventListener('click', function(event) {
+                if (event.target === lightbox || event.target.className === 'close') {
+                    closeLightbox();
+                }
+            });
+        }
+
+        function closeLightbox() {
+            let lightbox = document.querySelector('.lightbox');
+            if (lightbox) {
+                lightbox.remove();
+            }
+        }
+    </script>
+
+    <script> 
+        var sidemenu = document.getElementById("sidemenu");
+
+        function toggleMenu() {
+            if (sidemenu.style.right === "0px") {
+                sidemenu.style.right = "-200px";
+            } else {
+                sidemenu.style.right = "0";
+            }
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz-1AAKrka1_ro3jItiUm_88FyIBGAZkUWCzeYjiI1Z8TgNh5oTrrTm9dMI9_j62YslGg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("confirmation")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function() {
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+        
+</body>  
+</html>
