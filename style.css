@@ -38,7 +38,8 @@ nav {
     flex-wrap: wrap;
     z-index: 1000;
     background-color: #000000;
-    padding-bottom: -5px;
+    width: 100%;
+    padding-bottom: 5px;
 }
 
 body {
@@ -504,6 +505,10 @@ nav .fa-solid {
         background-image: none; 
     }
 
+    .container {
+        padding: 10px 10%;
+    }
+    
     #projects, #contacts {
         padding-top: 70px;
     }
