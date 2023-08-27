@@ -26,9 +26,7 @@ html {
 }
 
 .container {
-    padding: 0 1%;
-    margin-top: -20px;
-    /* padding: 10px 10%; Until "Under Construction" warning is out */
+    padding: 10px 10%;
 }
 
 nav {
@@ -499,16 +497,13 @@ nav .fa-solid {
     .warning {
         text-align: center;
         padding: 70px;
+        padding-bottom: 20px;
     }
 
     #header {
         background-image: none; 
     }
 
-    .container {
-        padding: 10px 10%;
-    }
-    
     #projects, #contacts {
         padding-top: 70px;
     }
@@ -532,7 +527,8 @@ nav .fa-solid {
 
     .logo {
         display: block;
-        padding-top: 100px;
+        padding-top: 20px;
+        /* padding-top: 100px; */
         margin: 0 auto;
         font-size: 70px;
     }
@@ -588,7 +584,8 @@ nav .fa-solid {
     }
 
     .header-text {
-        margin-top: 50%;
+        margin-top: 15%;
+        /* margin-top: 50%; */
         font-size: 25px;
         text-align: center;
     }
