@@ -252,6 +252,13 @@ nav ul li a:hover::after {
 }
 
 /* -------------------Projects------------------- */
+#instruction {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #36af65;
+}
+
 #projects {
     padding: 30px 0;
 }
