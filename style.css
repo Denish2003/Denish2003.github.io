@@ -274,7 +274,7 @@ nav ul li a:hover::after {
     padding: 30px 0;
 }
 
-.project-list, .digital-list, .drawing-list {
+.project-list, .digital-list, .drawing-list, .architecture-list {
     display: grid;
     grid-template-columns: repeat(3, 30%);
     grid-gap: 40px;
@@ -293,23 +293,23 @@ nav ul li a:hover::after {
     transition: transform 0.5s;
 }
 
-.digital, .drawing {
+.digital, .drawing, .architecture {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
     height: 400px;
 }
 
-.digital img, .drawing img {
+.digital img, .drawing img, .architecture img{
     width: 100%;
     height: 100%;
 }
 
-.hidden-project, .hidden-drawing, .hidden-digital {
+.hidden-project, .hidden-drawing, .hidden-digital, .hidden-architecture {
     display: none;
 }
 
-#programming-section, #drawing-section, #digital-drawing-section {
+#programming-section, #drawing-section, #digital-drawing-section, #architecture-section {
     padding-top: 40px;
 }
 
@@ -375,7 +375,7 @@ nav ul li a:hover::after {
     transition: 0.5s;
 }
 
-#programming-less, #drawing-less, #digital-less {
+#programming-less, #drawing-less, #digital-less, #architecture-less {
     display: none;
 }
 

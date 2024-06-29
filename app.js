@@ -18,6 +18,7 @@ function toggleProjects(action) {
     let hiddenProjects = document.querySelectorAll('.hidden-project');
     let hiddenDrawings = document.querySelectorAll('.hidden-drawing');
     let hiddenDigitals = document.querySelectorAll('.hidden-digital');
+    let hiddenArchitectures = document.querySelectorAll('.hidden-architecture');
 
     if (action === 'programming-more') {
         hiddenProjects.forEach(project => {
@@ -55,6 +56,18 @@ function toggleProjects(action) {
         });
         document.getElementById('digital-more').style.display = 'block';
         document.getElementById('digital-less').style.display = 'none';
+    } else if (action === 'architecture-more') {
+        hiddenArchitectures.forEach(architecture => {
+            architecture.style.display = 'block';
+        });
+        document.getElementById('architecture-more').style.display = 'none';
+        document.getElementById('architecture-less').style.display = 'block';
+    } else if (action === 'architecture-less') {
+        hiddenArchitectures.forEach(architecture => {
+            architecture.style.display = 'none';
+        });
+        document.getElementById('architecture-more').style.display = 'block';
+        document.getElementById('architecture-less').style.display = 'none';
     }
 }
     
