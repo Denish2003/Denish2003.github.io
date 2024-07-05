@@ -1,4 +1,4 @@
-// SKILLS, EXPERIENCE, EDUCATION SECTION
+// SKILLS, EXPERIENCE, EXTRACURRICULAR, EDUCATION SECTION
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
 
