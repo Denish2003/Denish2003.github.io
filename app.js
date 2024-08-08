@@ -1,17 +1,46 @@
-// SKILLS, EXPERIENCE, EXTRACURRICULAR, EDUCATION SECTION
+// SKILLS, EXPERIENCE, EDUCATION SECTION
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
 
-function opentab(tabname){
-    for(tablink of tablinks){
+function opentab(event, tabname) {
+    for (let tablink of tablinks) {
         tablink.classList.remove("active-link");
     }
-    for(tabcontent of tabcontents){
+    for (let tabcontent of tabcontents) {
         tabcontent.classList.remove("active-tab");
     }
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
 }
+
+// WORK EXPERIENCE AND EXTRACURRICULAR
+function openExperience(evt, experienceName) {
+    var i, experienceContents, experienceLinks;
+
+    // Hide all elements with class="experience-contents"
+    experienceContents = document.getElementsByClassName("experience-contents");
+    for (i = 0; i < experienceContents.length; i++) {
+        experienceContents[i].style.display = "none";
+        experienceContents[i].classList.remove("experience-active-tab");
+    }
+
+    // Remove the class "experience-active-link" from all elements with class="experience-links"
+    experienceLinks = document.getElementsByClassName("experience-links");
+    for (i = 0; i < experienceLinks.length; i++) {
+        experienceLinks[i].classList.remove("experience-active-link");
+    }
+
+    // Show the current tab, and add an "experience-active-link" class to the button that opened the tab
+    document.getElementById(experienceName).style.display = "block";
+    evt.currentTarget.classList.add("experience-active-link");
+    document.getElementById(experienceName).classList.add("experience-active-tab");
+}
+
+// Set the default tab to be visible
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("work-experience").style.display = "block";
+    document.getElementById("work-experience").classList.add("experience-active-tab");
+});
 
 // SHOW MORE, SHOW LESS
 function toggleProjects(action) {

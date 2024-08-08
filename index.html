@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/d63140c660.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -44,7 +44,7 @@
             <div class="row">
                 <div class="about-col-1">
                     <a href="images/Denish.png" class="lightbox-link">
-                        <img src="images/Denish.png">
+                        <img src="images/Denish.jpg">
                     </a>
                 </div>
                 <div class="about-col-2">
@@ -58,11 +58,10 @@
                         Let’s embark on this exciting adventure together!
                     </p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('extracurricular')">Extracurricular</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                    </div>                    
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <div class="skills-row">
@@ -99,27 +98,33 @@
                         <i class="fa-brands fa-square-js"></i>
                     </div>
                     <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>May 2024 - Present</span><br><em>Software Engineer for AI Training Data, </em>Outlier</li>
-                            <li><span>May 2024 - Present</span><br><em>Software Security and Accessibility Researcher, </em>University of Michigan</li>
-                            <li><span>September 2023 - Present</span><br><em>Computer Science and Mathematics Tutor, </em>McGraw Center for Teaching and Learning</li>
-                            <li><span>January 2024 - May 2024</span><br><em>Programming Systems Grader, </em>Princeton Computer Science</li>
-                            <li><span>May 2023 - August 2023</span><br><em>Big Data Researcher, </em>Salisbury University</li>
-                        </ul>
+                        <div class="experience-titles">
+                            <p class="experience-links experience-active-link" onclick="openExperience(event, 'work-experience')">Work Experience</p>
+                            <p class="experience-links" onclick="openExperience(event, 'extracurricular')">Extracurricular</p>
+                        </div>
+                        <div class="experience-contents experience-active-tab" id="work-experience">
+                            <ul>
+                                <li><span>May 2024 - Present</span><br><em>Software Engineer for AI Training Data, </em>Outlier</li>
+                                <li><span>May 2024 - Present</span><br><em>Software Security and Accessibility Researcher, </em>University of Michigan</li>
+                                <li><span>September 2023 - Present</span><br><em>Computer Science and Mathematics Tutor, </em>McGraw Center for Teaching and Learning</li>
+                                <li><span>January 2024 - May 2024</span><br><em>Programming Systems Grader, </em>Princeton Computer Science</li>
+                                <li><span>May 2023 - August 2023</span><br><em>Big Data Researcher, </em>Salisbury University</li>
+                            </ul>
+                        </div>
+                        <div class="experience-contents" id="extracurricular">
+                            <ul>
+                                <li><span>February 2024 - Present</span><br><em>Student, </em>CodePath</li>
+                                <li><span>January 2024 - Present</span><br><em>Member, </em>Princeton Robotics Club</li>
+                                <li><span>September 2022 - Present</span><br><em>Member, </em>Scholar Institute Fellows Program (SIFP)</li>
+                                <li><span>August 2023 - May 2024</span><br><em>Program Coordinator, </em>Codology (Startup Incubator for High School Students)</li>
+                                <li><span>February 2023 - May 2023</span><br><em>Participant, </em>AI Alignment</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
                             <li><span>September 2022 - May 2026</span><br>Princeton University</li>
                             <li><span>September 2018 - June 2022</span><br>North Bergen High School</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="extracurricular">
-                        <ul>
-                            <li><span>February 2024 - Present</span><br><em>Student, </em>CodePath</li>
-                            <li><span>January 2024 - Present</span><br><em>Member, </em>Princeton Robotics Club</li>
-                            <li><span>September 2022 - Present</span><br><em>Member, </em>Scholar Institue Fellows Program (SIFP)</li>
-                            <li><span>August 2023 - May 2024</span><br><em>Program Coordinator, </em>Codology (Startup Incubator for High School Students)</li>
-                            <li><span>Februrary 2023 - May 2023</span><br><em>Participant, </em>AI Alignment</li>
                         </ul>
                     </div>
                 </div>
@@ -130,7 +135,7 @@
     <div id="projects">
         <div class="container">
             <h1 class="subtitle">Projects</h1>
-            <h2 class="subsubtitle" id="programming-section">Programming</h2>
+            <h2 class="subsubsection" id="programming-section">Programming</h2>
                 <h4 id="instruction"> To get code for projects without link, please submit a contact form below. </h3>
                 <div class="project-list">
                     <div class="project">

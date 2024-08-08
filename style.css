@@ -147,7 +147,7 @@ nav ul li a:hover::after {
 
 /* -------------------About Me------------------- */
 .about {
-    padding: 50px 0;
+    margin: 5% 5%;
     color: #ababab;
 }
 
@@ -178,7 +178,7 @@ nav ul li a:hover::after {
 
 .subtitle {
     font-size: 45px;
-    font-weight: 600;
+    font-weight: bold;
     color: #fff;
     padding-bottom: 25px;
     background-color: None;
@@ -208,11 +208,6 @@ nav ul li a:hover::after {
     bottom: -8px;
 }
 
-.tab-links.active-link::after {
-    width: 50%;
-    transition: 0.5s;
-}
-
 .tab-contents ul li {
     font-size: 15px;
     list-style: none;
@@ -224,11 +219,70 @@ nav ul li a:hover::after {
     font-weight: 700;
 }
 
+.tab-links.active-link::after {
+    width: 50%;
+    transition: 0.5s;
+}
+
 .tab-contents {
     display: none;
 }
 
-.tab-contents.active-tab {
+.tab-contents.active-tab{
+    display: block;
+}
+
+.experience-titles {
+    display: flex;
+    gap: 20px; 
+    margin-bottom: 10px; 
+}
+
+.experience-links {
+    margin-right: 50px;
+    font-size: 15px;
+    font-weight: 800;
+    color: #dddddd;
+    cursor: pointer;
+    position: relative;
+}
+
+.experience-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #36af65;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+}
+
+.experience-titles .experience-active-link {
+    color: #36af65;
+    font-weight: bold;
+}
+
+.experience-contents ul li {
+    font-size: 15px;
+    list-style: none;
+    margin: 20px 0;
+}
+
+.experience-contents ul li span {
+    color: #60dd90;
+    font-weight: 700;
+}
+
+.experience-links.active-link::after {
+    width: 50%;
+    transition: 0.5s;
+}
+
+.experience-contents {
+    display: none;
+}
+
+.experience-contents.experience-active-tab {
     display: block;
 }
 
@@ -263,6 +317,14 @@ nav ul li a:hover::after {
 }
 
 /* -------------------Projects------------------- */
+.subsubsection {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    padding-bottom: 25px;
+    background-color: None;
+}
+
 #instruction {
     text-align: center;
     font-size: 20px;
