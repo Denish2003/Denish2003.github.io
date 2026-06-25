@@ -38,14 +38,23 @@ body {
   font-family: var(--font-body);
   line-height: 1.6;
   overflow-x: hidden;
-  cursor: none;
 }
 a { color: inherit; text-decoration: none; }
-button { cursor: none; font-family: inherit; }
+button { font-family: inherit; }
+
+/* Custom cursor only on real pointer devices */
+@media (hover: hover) and (pointer: fine) {
+  body, button { cursor: none; }
+  a { cursor: none; }
+}
 img { display: block; max-width: 100%; }
 ul { list-style: none; }
 
-/* ─── CURSOR ─────────────────────────────────────────── */
+/* ─── CURSOR — hidden on touch, visible on mouse devices ─ */
+.cursor-dot, .cursor-ring { display: none; }
+@media (hover: hover) and (pointer: fine) {
+  .cursor-dot, .cursor-ring { display: block; }
+}
 .cursor-dot {
   position: fixed; top: 0; left: 0;
   width: 8px; height: 8px;

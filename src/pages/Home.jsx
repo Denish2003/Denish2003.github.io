@@ -453,7 +453,7 @@ export default function Home() {
       <div className="about-teaser section">
         <div className="about-teaser-grid">
           <div className="about-photo-wrap st-reveal">
-            <img src="/images/Denish.jpg" alt="Denish Patel" className="about-photo" />
+            <img src="/images/images/Denish.jpg" alt="Denish Patel" className="about-photo" />
             <div className="about-photo-deco" />
           </div>
           <div className="about-text st-reveal" data-delay="0.15">

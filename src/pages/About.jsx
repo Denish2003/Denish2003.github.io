@@ -88,7 +88,7 @@ export default function About() {
           </div>
         </div>
         <div>
-          <img src="/images/Denish.jpg" alt="Denish Patel" className="about-hero-photo" />
+          <img src="/images/images/Denish.jpg" alt="Denish Patel" className="about-hero-photo" />
         </div>
       </div>
 
