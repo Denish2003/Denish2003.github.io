@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art - Denish Patel</title>
+  <meta name="description" content="Art and visual work by Denish Patel - drawings, digital illustration, and architecture.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+<div id="loader"><div class="loader-logo">D<span>.</span></div></div>
+
+<nav>
+  <a href="index.html" class="nav-logo">Denish<span>.</span></a>
+  <div class="nav-center">
+    <a href="index.html">Home</a>
+    <a href="work.html">Work</a>
+    <a href="art.html" class="active">Art</a>
+    <a href="about.html">About</a>
+  </div>
+  <div class="nav-right">
+    <a href="https://linkedin.com/in/denishpatel13" class="nav-social" target="_blank" rel="noopener">LinkedIn ↗</a>
+    <a href="https://github.com/Denish2003" class="nav-social" target="_blank" rel="noopener">GitHub ↗</a>
+    <a href="mailto:dp9798@alumni.princeton.edu" class="btn-nav">Say Hi →</a>
+  </div>
+  <button class="nav-mobile-btn" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="nav-mobile-overlay">
+  <a href="index.html">Home</a>
+  <a href="work.html">Work</a>
+  <a href="art.html">Art</a>
+  <a href="about.html">About</a>
+  <a href="mailto:dp9798@alumni.princeton.edu">Say Hi</a>
+</div>
+
+<div class="hero-ambient"></div>
+<div class="hero-ambient-2"></div>
+
+<!-- Lightbox -->
+<div id="lightbox">
+  <button id="lightbox-close">✕</button>
+  <img id="lightbox-img" src="" alt="Artwork">
+</div>
+
+<!-- Page Hero -->
+<div class="art-hero">
+  <p class="section-label">Creative Work</p>
+  <h1 class="big-name" style="font-size:clamp(52px,8vw,110px)">
+    Art &amp;<br><em>Making.</em>
+  </h1>
+  <p class="about-tagline" style="max-width:560px;margin-top:1.5rem">
+    When I'm not writing code or designing interfaces, I'm drawing, painting, or building
+    physical things. The same eye that makes a good UI makes a good painting.
+    Click any piece to enlarge.
+  </p>
+  <div class="gallery-filter">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="drawing">Drawing</button>
+    <button class="filter-btn" data-filter="digital">Digital</button>
+    <button class="filter-btn" data-filter="architecture">Architecture</button>
+  </div>
+</div>
+
+<!-- Gallery Grid -->
+<div class="gallery-grid">
+
+  <!-- Drawings -->
+  <div class="gallery-item" data-cat="drawing">
+    <img src="drawings/ReflectionMicrone.jpg" alt="Reflection Microne - oil painting">
+    <div class="gallery-item-overlay">
+      <span class="gallery-label">Reflection Microne</span>
+    </div>
+  </div>
+
+  <div class="gallery-item" data-cat="drawing">
+    <img src="drawings/BeautyOfNature.jpg" alt="Beauty of Nature - drawing">
+    <div class="gallery-item-overlay">
+      <span class="gallery-label">Beauty of Nature</span>
+    </div>
+  </div>
+
+  <!-- Digital -->
+  <div class="gallery-item" data-cat="digital">
+    <img src="drawings/NASA.JPG" alt="NASA - digital illustration">
+    <div class="gallery-item-overlay">
+      <span class="gallery-label">NASA - Digital</span>
+    </div>
+  </div>
+
+  <div class="gallery-item" data-cat="drawing">
+    <img src="drawings/stilllife1.JPG" alt="Still Life - charcoal">
+    <div class="gallery-item-overlay">
+      <span class="gallery-label">Still Life I</span>
+    </div>
+  </div>
+
+  <!-- Architecture -->
+  <div class="gallery-item" data-cat="architecture">
+    <img src="architecture/Image1.PNG" alt="Architecture study 1">
+    <div class="gallery-item-overlay">
+      <span class="gallery-label">Architectural Study I</span>
+    </div>
+  </div>
+
+  <div class="gallery-item" data-cat="digital">
+    <img src="drawings/flower_heart.PNG" alt="Flower Heart - digital">
+    <div class="gallery-item-overlay">
+      <span class="gallery-label">Flower Heart</span>
+    </div>
+  </div>
+
+  <div class="gallery-item" data-cat="drawing">
+    <img src="drawings/SoftPastel.jpg" alt="Soft Pastel">
+    <div class="gallery-item-overlay">
+      <span class="gallery-label">Soft Pastel</span>
+    </div>
+  </div>
+
+  <div class="gallery-item" data-cat="architecture">
+    <img src="architecture/Image2.jpg" alt="Architecture study 2">
+    <div class="gallery-item-overlay">
+      <span class="gallery-label">Architectural Study II</span>
+    </div>
+  </div>
+
+  <div class="gallery-item" data-cat="digital">
+    <img src="drawings/portrait.png" alt="Portrait - digital">
+    <div class="gallery-item-overlay">
+      <span class="gallery-label">Digital Portrait</span>
+    </div>
+  </div>
+
+  <div class="gallery-item" data-cat="drawing">
+    <img src="drawings/VirtualLearning.jpg" alt="Virtual Learning">
+    <div class="gallery-item-overlay">
+      <span class="gallery-label">Virtual Learning</span>
+    </div>
+  </div>
+
+  <div class="gallery-item" data-cat="architecture">
+    <img src="architecture/Image3.jpg" alt="Architecture study 3">
+    <div class="gallery-item-overlay">
+      <span class="gallery-label">Architectural Study III</span>
+    </div>
+  </div>
+
+  <div class="gallery-item" data-cat="drawing">
+    <img src="drawings/sketch.JPG" alt="Sketch">
+    <div class="gallery-item-overlay">
+      <span class="gallery-label">Sketch Study</span>
+    </div>
+  </div>
+
+  <div class="gallery-item" data-cat="architecture">
+    <img src="architecture/Image4.PNG" alt="Architecture study 4">
+    <div class="gallery-item-overlay">
+      <span class="gallery-label">Architectural Study IV</span>
+    </div>
+  </div>
+
+  <div class="gallery-item" data-cat="drawing">
+    <img src="drawings/stilllife2.jpg" alt="Still Life II">
+    <div class="gallery-item-overlay">
+      <span class="gallery-label">Still Life II</span>
+    </div>
+  </div>
+
+  <div class="gallery-item" data-cat="architecture">
+    <img src="architecture/Image5.jpg" alt="Architecture study 5">
+    <div class="gallery-item-overlay">
+      <span class="gallery-label">Architectural Study V</span>
+    </div>
+  </div>
+
+  <div class="gallery-item" data-cat="digital">
+    <img src="drawings/hand.jpg" alt="Hand study - digital">
+    <div class="gallery-item-overlay">
+      <span class="gallery-label">Hand Study</span>
+    </div>
+  </div>
+
+  <div class="gallery-item" data-cat="architecture">
+    <img src="architecture/Image6.jpg" alt="Architecture study 6">
+    <div class="gallery-item-overlay">
+      <span class="gallery-label">Architectural Study VI</span>
+    </div>
+  </div>
+
+  <div class="gallery-item" data-cat="drawing">
+    <img src="drawings/ChangesOverTime.jpg" alt="Changes Over Time">
+    <div class="gallery-item-overlay">
+      <span class="gallery-label">Changes Over Time</span>
+    </div>
+  </div>
+
+  <div class="gallery-item" data-cat="drawing">
+    <img src="drawings/Painting.jpg" alt="Painting">
+    <div class="gallery-item-overlay">
+      <span class="gallery-label">Painting Study</span>
+    </div>
+  </div>
+
+</div>
+
+<footer style="max-width:var(--max-w);margin:0 auto;padding:48px var(--pad);display:flex;justify-content:space-between;align-items:center;gap:2rem;flex-wrap:wrap;border-top:1px solid var(--border)">
+  <div class="footer-left">
+    <div class="footer-logo-text">Denish<span>.</span></div>
+    <div class="footer-copy">© 2026 Denish Patel · Princeton, NJ</div>
+  </div>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="work.html">Work</a>
+    <a href="about.html">About</a>
+    <a href="mailto:dp9798@alumni.princeton.edu">Email ↗</a>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

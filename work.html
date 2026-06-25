@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work - Denish Patel</title>
+  <meta name="description" content="Projects by Denish Patel - product design, software engineering, and research.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+<div id="loader"><div class="loader-logo">D<span>.</span></div></div>
+
+<nav>
+  <a href="index.html" class="nav-logo">Denish<span>.</span></a>
+  <div class="nav-center">
+    <a href="index.html">Home</a>
+    <a href="work.html" class="active">Work</a>
+    <a href="art.html">Art</a>
+    <a href="about.html">About</a>
+  </div>
+  <div class="nav-right">
+    <a href="https://linkedin.com/in/denishpatel13" class="nav-social" target="_blank" rel="noopener">LinkedIn ↗</a>
+    <a href="https://github.com/Denish2003" class="nav-social" target="_blank" rel="noopener">GitHub ↗</a>
+    <a href="mailto:dp9798@alumni.princeton.edu" class="btn-nav">Say Hi →</a>
+  </div>
+  <button class="nav-mobile-btn" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="nav-mobile-overlay">
+  <a href="index.html">Home</a>
+  <a href="work.html">Work</a>
+  <a href="art.html">Art</a>
+  <a href="about.html">About</a>
+  <a href="mailto:dp9798@alumni.princeton.edu">Say Hi</a>
+</div>
+
+<div class="hero-ambient"></div>
+<div class="hero-ambient-2"></div>
+
+<!-- Page Hero -->
+<div class="work-hero">
+  <p class="section-label">Portfolio</p>
+  <h1 class="big-name" style="font-size:clamp(52px,8vw,110px)">
+    Selected<br><em>Work.</em>
+  </h1>
+  <p class="about-tagline" style="max-width:520px;margin-top:1.5rem">
+    A mix of product design, software engineering, and research -
+    from UX research with content moderators in Africa to agentic AI systems at a Fortune 500.
+  </p>
+  <div class="work-filter">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="design">Product Design</button>
+    <button class="filter-btn" data-filter="eng">Engineering</button>
+    <button class="filter-btn" data-filter="research">Research</button>
+  </div>
+</div>
+
+<!-- Projects grid -->
+<div class="work-page-grid">
+
+  <!-- ACMU - wide -->
+  <a id="acmu" href="https://github.com/Denish2003" class="project-card card-wide reveal" data-cat="design" target="_blank" rel="noopener">
+    <div class="card-img">
+      <div class="card-placeholder ph-acmu">
+        <div class="ph-ui ph-sidebar"></div>
+        <div class="ph-ui ph-topbar"></div>
+        <div class="ph-ui ph-main"></div>
+      </div>
+      <div class="card-year">Jan – May 2025</div>
+    </div>
+    <div class="card-body">
+      <div class="card-tags">
+        <span class="tag">Product Design</span>
+        <span class="tag research">UX Research</span>
+        <span class="tag">Figma</span>
+        <span class="tag">HCI</span>
+      </div>
+      <h3 class="card-title">ACMU - Platform for African Content Moderators</h3>
+      <p class="card-desc">
+        Princeton HCI course partnership with the African Content Moderators Union.
+        Ran focus groups with members in Nigeria and Kenya to surface unmet needs -
+        governance, job postings, mental health, anonymity, and crisis-response.
+        Evaluated 7+ existing platforms (Discord, Team Blind, 7 Cups) against member-defined needs.
+        Designed low-fidelity wireframes on iPad → iterated to high-fidelity Figma mockups
+        covering full visual identity and accessibility. Led rebrand concept design against
+        five industry competitors. Mockups served as direct development blueprints.
+      </p>
+      <span class="card-link">Princeton HCI Project ↗</span>
+    </div>
+  </a>
+
+  <!-- Senior Thesis -->
+  <a id="thesis" href="https://github.com/Denish2003" class="project-card reveal reveal-d1" data-cat="design" target="_blank" rel="noopener">
+    <div class="card-img">
+      <div class="card-placeholder ph-thesis">
+        <div class="ph-ui ph-chat"></div>
+        <div class="ph-ui ph-bubble-r"></div>
+        <div class="ph-ui ph-bubble-l"></div>
+      </div>
+      <div class="card-year">Sep 2025 – May 2026</div>
+    </div>
+    <div class="card-body">
+      <div class="card-tags">
+        <span class="tag">Product Design</span>
+        <span class="tag eng">Full-Stack</span>
+        <span class="tag research">Research</span>
+      </div>
+      <h3 class="card-title">AI Companionship Data Donation Platform</h3>
+      <p class="card-desc">
+        Senior thesis advised by Prof. Manoel Horta Ribeiro. Designed an end-to-end
+        participant experience - consent → upload → review → redact → export → donate -
+        for a sensitive AI conversation data-donation tool. Key innovation: a chat-style
+        review interface (instead of a table) matching how participants naturally read
+        conversations, with inline PII flagging and selective redaction controls.
+        Ran a recruitment study; 0% conversion rate informed concrete trust and onboarding fixes.
+      </p>
+      <span class="card-link">Senior Thesis ↗</span>
+    </div>
+  </a>
+
+  <!-- Verisk -->
+  <a id="verisk" href="https://www.verisk.com" class="project-card reveal reveal-d2" data-cat="eng" target="_blank" rel="noopener">
+    <div class="card-img">
+      <div class="card-placeholder ph-verisk">
+        <div class="ph-ui ph-topbar"></div>
+        <div class="ph-ui ph-chart">
+          <div class="ph-bar1"></div>
+          <div class="ph-bar2"></div>
+          <div class="ph-bar3"></div>
+        </div>
+      </div>
+      <div class="card-year">May – Aug 2025</div>
+    </div>
+    <div class="card-body">
+      <div class="card-tags">
+        <span class="tag eng">Engineering</span>
+        <span class="tag eng">Generative AI</span>
+        <span class="tag">AWS Bedrock</span>
+        <span class="tag">Streamlit</span>
+      </div>
+      <h3 class="card-title">Agentic AI Data Standardization - Verisk Analytics</h3>
+      <p class="card-desc">
+        Software Engineering Intern on the Generative AI team at Verisk Analytics, Jersey City.
+        Designed and built an agentic AI workflow using AWS Bedrock, S3, and Streamlit that
+        reduced data standardization time by 95%. Worked closely with end users to shape the
+        interface around their actual review process - a product design and engineering hybrid.
+      </p>
+      <span class="card-link eng-link">Verisk Analytics ↗</span>
+    </div>
+  </a>
+
+  <!-- U of M Research -->
+  <a id="umich" href="https://umich.edu" class="project-card reveal reveal-d1" data-cat="research" target="_blank" rel="noopener">
+    <div class="card-img">
+      <div class="card-placeholder ph-health">
+        <div class="ph-ui ph-topbar"></div>
+        <div class="ph-ui ph-chart">
+          <div class="ph-bar1" style="height:40%;background:rgba(167,139,250,0.4)"></div>
+          <div class="ph-bar2" style="height:70%;background:rgba(167,139,250,0.6)"></div>
+          <div class="ph-bar3" style="height:55%;background:rgba(167,139,250,0.4)"></div>
+        </div>
+      </div>
+      <div class="card-year">May – Aug 2024</div>
+    </div>
+    <div class="card-body">
+      <div class="card-tags">
+        <span class="tag research">Research</span>
+        <span class="tag">Security</span>
+        <span class="tag">Accessibility</span>
+      </div>
+      <h3 class="card-title">Security &amp; Accessibility Empirical Study - U of M</h3>
+      <p class="card-desc">
+        Conducted a large-scale empirical study of 2,500+ bug reports at the intersection
+        of accessibility and security at the University of Michigan, Flint. Surfaced usability
+        gaps relevant to inclusive design - where security vulnerabilities actively harm
+        accessible user experiences.
+      </p>
+      <span class="card-link research" style="color:#63d9bc">View Research ↗</span>
+    </div>
+  </a>
+
+  <!-- CuisineCompass -->
+  <a href="https://github.com/Denish2003/CuisineCompass" class="project-card reveal" data-cat="eng" target="_blank" rel="noopener">
+    <div class="card-img">
+      <div class="card-placeholder ph-cuisine">
+        <div class="ph-ui ph-topbar"></div>
+        <div class="ph-ui ph-sidebar"></div>
+        <div class="ph-ui ph-main"></div>
+      </div>
+      <div class="card-year">2023</div>
+    </div>
+    <div class="card-body">
+      <div class="card-tags">
+        <span class="tag eng">Engineering</span>
+        <span class="tag">React</span>
+        <span class="tag">Full-Stack</span>
+      </div>
+      <h3 class="card-title">CuisineCompass</h3>
+      <p class="card-desc">
+        Culinary platform offering a vast collection of recipes with robust filtering and
+        search functionalities, catering to diverse tastes and dietary preferences.
+        Built with React and a custom backend.
+      </p>
+      <span class="card-link eng-link">GitHub ↗</span>
+    </div>
+  </a>
+
+  <!-- Health Expenditure -->
+  <a href="https://github.com/Denish2003/PrincetonDataScienceBowl" class="project-card reveal reveal-d1" data-cat="eng" target="_blank" rel="noopener">
+    <div class="card-img">
+      <img src="images/HealthExpenditurePrediction.PNG" alt="Health Expenditure Prediction">
+      <div class="card-year">2023</div>
+    </div>
+    <div class="card-body">
+      <div class="card-tags">
+        <span class="tag eng">Data Science</span>
+        <span class="tag">Python</span>
+        <span class="tag">ML</span>
+      </div>
+      <h3 class="card-title">Princeton Data Bowl - Health Expenditure Prediction</h3>
+      <p class="card-desc">
+        Predict health expenditure as a percentage of GDP using various health-related
+        indicators. Built and evaluated ML models on real-world public health datasets
+        for the Princeton Data Science Bowl competition.
+      </p>
+      <span class="card-link eng-link">GitHub ↗</span>
+    </div>
+  </a>
+
+  <!-- Full-Stack Course Project -->
+  <a href="https://github.com/Denish2003" class="project-card reveal reveal-d2" data-cat="design" target="_blank" rel="noopener">
+    <div class="card-img">
+      <div class="card-placeholder ph-acmu" style="background:linear-gradient(135deg,#141020 0%,#1c1530 100%)">
+        <div class="ph-ui ph-topbar"></div>
+        <div class="ph-ui ph-main"></div>
+      </div>
+      <div class="card-year">Jan – May 2025</div>
+    </div>
+    <div class="card-body">
+      <div class="card-tags">
+        <span class="tag">UI Design</span>
+        <span class="tag">Figma</span>
+        <span class="tag eng">Full-Stack</span>
+      </div>
+      <h3 class="card-title">Full-Stack Course Project - Princeton University</h3>
+      <p class="card-desc">
+        Served as UI Designer for a Princeton full-stack web application. Created high-fidelity
+        mockups in Figma prior to development, defining layout, component hierarchy, and
+        visual style - ensuring design and implementation stayed aligned throughout.
+      </p>
+      <span class="card-link">View Mockups ↗</span>
+    </div>
+  </a>
+
+  <!-- Touring New York -->
+  <a href="https://github.com/Denish2003/TouringNewYork" class="project-card reveal reveal-d1" data-cat="eng" target="_blank" rel="noopener">
+    <div class="card-img">
+      <img src="images/TouringNewYork.PNG" alt="Touring New York">
+      <div class="card-year">2023</div>
+    </div>
+    <div class="card-body">
+      <div class="card-tags">
+        <span class="tag eng">Engineering</span>
+        <span class="tag">Java</span>
+        <span class="tag">Algorithms</span>
+      </div>
+      <h3 class="card-title">Touring New York</h3>
+      <p class="card-desc">
+        Guides tourists with offline access to New York City seating locations.
+        Built graph algorithms to compute optimal touring routes across the city.
+      </p>
+      <span class="card-link eng-link">GitHub ↗</span>
+    </div>
+  </a>
+
+</div>
+
+<!-- Contact CTA -->
+<div class="contact-section section">
+  <p class="section-label">Let's Connect</p>
+  <h2 class="section-title reveal">Open to full-time roles<br>starting Summer 2026</h2>
+  <p class="section-desc reveal" style="margin:1rem auto 2.5rem;text-align:center">
+    Looking for product design or software engineering positions.
+    Based in Princeton, NJ - open to NYC, SF, and remote.
+  </p>
+  <div class="contact-links reveal">
+    <a href="mailto:dp9798@alumni.princeton.edu" class="contact-item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      dp9798@alumni.princeton.edu
+    </a>
+    <a href="https://linkedin.com/in/denishpatel13" class="contact-item" target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      LinkedIn ↗
+    </a>
+    <a href="https://github.com/Denish2003" class="contact-item" target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+      GitHub ↗
+    </a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-left">
+    <div class="footer-logo-text">Denish<span>.</span></div>
+    <div class="footer-copy">© 2026 Denish Patel · Princeton, NJ</div>
+  </div>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="art.html">Art</a>
+    <a href="about.html">About</a>
+    <a href="mailto:dp9798@alumni.princeton.edu">Email ↗</a>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
