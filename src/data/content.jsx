@@ -9,14 +9,7 @@ export const PROJECTS = [
     link: 'https://github.com/Denish2003',
     linkLabel: 'Princeton HCI Project →',
     linkCls: '',
-    ph: 'ph-acmu',
-    phEls: (
-      <>
-        <div className="ph-ui ph-sidebar" />
-        <div className="ph-ui ph-topbar" />
-        <div className="ph-ui ph-main" />
-      </>
-    ),
+    img: '/images/images/ACMU.png',
     cat: 'design',
   },
   {
@@ -28,14 +21,7 @@ export const PROJECTS = [
     link: 'https://github.com/Denish2003',
     linkLabel: 'Senior Thesis →',
     linkCls: '',
-    ph: 'ph-thesis',
-    phEls: (
-      <>
-        <div className="ph-ui ph-chat" />
-        <div className="ph-ui ph-bubble-r" />
-        <div className="ph-ui ph-bubble-l" />
-      </>
-    ),
+    img: '/images/images/thesis.png',
     cat: 'design',
   },
   {
@@ -47,17 +33,7 @@ export const PROJECTS = [
     link: 'https://www.verisk.com',
     linkLabel: 'Verisk Analytics →',
     linkCls: 'eng',
-    ph: 'ph-verisk',
-    phEls: (
-      <>
-        <div className="ph-ui ph-topbar" />
-        <div className="ph-ui ph-chart" style={{ position: 'absolute', left: '11%', top: '20%', width: '78%', height: '60%', zIndex: 1 }}>
-          <div className="ph-bar" style={{ width: '18%', left: '10%', height: '55%', position: 'absolute', bottom: 0, borderRadius: '3px 3px 0 0', background: 'rgba(129,140,248,0.4)' }} />
-          <div className="ph-bar" style={{ width: '18%', left: '35%', height: '82%', position: 'absolute', bottom: 0, borderRadius: '3px 3px 0 0', background: 'rgba(240,85,37,0.5)' }} />
-          <div className="ph-bar" style={{ width: '18%', left: '60%', height: '42%', position: 'absolute', bottom: 0, borderRadius: '3px 3px 0 0', background: 'rgba(129,140,248,0.4)' }} />
-        </div>
-      </>
-    ),
+    img: '/images/images/verisk.webp',
     cat: 'eng',
   },
   {

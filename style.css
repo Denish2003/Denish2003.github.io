@@ -772,7 +772,7 @@ footer {
   .card-wide .card-img { aspect-ratio: 16/9; }
   .about-teaser-grid { grid-template-columns: 1fr; }
   .about-hero { grid-template-columns: 1fr; }
-  .about-hero-photo { max-height: 360px; aspect-ratio: 3/2; }
+  .about-hero-photo { max-height: 360px }
   .gallery-grid { columns: 2; }
 }
 @media (max-width: 768px) {
