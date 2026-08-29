@@ -252,9 +252,10 @@ export default function Home() {
   const featured = PROJECTS.filter(p => FEATURED.includes(p.id))
 
   const MARQUEE = [
-    'Product Design', 'Software Engineering', 'HCI Research',
+    'Software Engineering', 'Product Design', 'HCI Research',
     'Visual Art', 'Architecture', 'Princeton University',
     'Figma', 'React · TypeScript', 'Generative AI',
+    'Computer Science', 'Statistics & Machine Learning'
   ]
 
   return (
@@ -272,7 +273,7 @@ export default function Home() {
           <div className="hero-left">
             <p className="hero-eyebrow" style={{ opacity: 0, transform: 'translateY(20px)' }}>
               <span className="eyebrow-dot" />
-              Princeton CS '26 &nbsp;·&nbsp; Product Designer &nbsp;·&nbsp; Engineer
+              Princeton CS '26 &nbsp;·&nbsp; Software Engineer &nbsp;·&nbsp; Product Designer
             </p>
 
             <h1 className="hero-title">
@@ -290,7 +291,7 @@ export default function Home() {
               I build software that ships and design products people{' '}
               <strong>actually want to use.</strong> Princeton CS senior finishing a
               senior thesis on AI data donation - bridging{' '}
-              <strong>product design</strong> and <strong>software engineering</strong>.
+              <strong>software engineering</strong> and <strong>product design</strong>.
             </p>
 
             <div className="hero-ctas" style={{ opacity: 0, transform: 'translateY(16px)' }}>
@@ -298,7 +299,7 @@ export default function Home() {
               <Link to="/about" className="btn btn-outline">About Me</Link>
             </div>
 
-            <div className="hero-stats" style={{ opacity: 0, transform: 'translateY(16px)' }}>
+            {/* <div className="hero-stats" style={{ opacity: 0, transform: 'translateY(16px)' }}>
               <div>
                 <div className="stat-num"><Counter to={2500} suffix="+" /></div>
                 <div className="stat-lbl">Bug reports analyzed</div>
@@ -315,7 +316,7 @@ export default function Home() {
                 <div className="stat-num">4</div>
                 <div className="stat-lbl">Years at Princeton</div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* right: code card */}
@@ -353,7 +354,7 @@ export default function Home() {
                 {'  '}<span className="c-bracket">],</span>{'\n'}
                 {'  '}<span className="c-prop">status</span>
                 <span className="c-bracket">: </span>
-                <span className="c-accent">'open to work ✦'</span>{'\n'}
+                <span className="c-accent">'SWE @ BlackRock'</span>{'\n'}
                 <span className="c-bracket">{'}'}</span>
                 <span className="code-cursor" />
               </div>
@@ -463,7 +464,7 @@ export default function Home() {
             </h2>
             <p>
               I'm a senior at <strong>Princeton University</strong> studying Computer Science
-              with minors in Statistics &amp; ML, Visual Arts, and Architecture &amp; Engineering.
+              with minors in Statistics &amp; ML and interest in Visual Arts, and Architecture &amp; Engineering.
               That's not a typo - I genuinely can't pick a lane.
             </p>
             <p>
@@ -485,7 +486,7 @@ export default function Home() {
         <p className="section-label">Let's Connect</p>
         <h2 className="section-title">Get in touch</h2>
         <p className="section-desc" style={{ margin: '1rem auto 2.5rem', textAlign: 'center' }}>
-          Based in Princeton, NJ.
+          Based in Atlanta, GA.
         </p>
         <div className="contact-links">
           <a href="mailto:dp9798@alumni.princeton.edu" className="contact-item">
